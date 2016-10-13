@@ -26,9 +26,9 @@ var api = new ParseServer({
 
 var app = express();
 
-let httpServer = require('http').createServer(app);
-httpServer.listen(port);
-var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
+// let httpServer = require('http').createServer(app);
+// httpServer.listen(port);
+// var parseLiveQueryServer = ParseServer.createLiveQueryServer(httpServer);
 
 // Serve the Parse API on the /parse URL prefix
 var mountPath = process.env.PARSE_MOUNT || '/parse';
